@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model F22 {
+  id Int @id @default(autoincrement())
+  width Int 136
+  height Int 189
+}
+
+model C17 {
+  id Int @id @default(autoincrement())
+  width Int 517.5
+  height Int 530
+}
+
+model KC135 {
+  id Int @id @default(autoincrement())
+  width Int 398.8
+  height Int 415.3
+}

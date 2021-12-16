@@ -1,0 +1,8 @@
+.main {
+  padding: 0px 80px
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
